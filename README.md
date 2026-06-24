@@ -1,5 +1,8 @@
 # 🔍 Flow-Lens
 
+![CI Pipeline](https://github.com/YOUR_USERNAME/ci-bottleneck-analyzer/actions/workflows/ci.yml/badge.svg)
+
+
 Full-stack GitHub Actions pipeline fetcher and analyser.
 Fetches last 100 pipelines and generates a dashboard showing
 bottlenecks, run counts, average durations and trends.

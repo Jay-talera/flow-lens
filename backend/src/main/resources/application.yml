@@ -1,5 +1,5 @@
 server:
-  port: ${SERVER_PORT:8080}
+  port: ${SERVER_PORT:10000}
 
 spring:
   datasource:
@@ -12,7 +12,11 @@ spring:
       initialization-fail-timeout: 0
 
   flyway:
+    enabled: true
     baseline-on-migrate: true
+    url: ${DB_URL}                    # ← explicitly set flyway url
+    user: ${DB_USER:postgres}         # ← explicitly set flyway user
+    password: ${DB_PASSWORD:postgres} # ← explicitly set flyway password
 
   jpa:
     open-in-view: false

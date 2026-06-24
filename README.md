@@ -1,6 +1,6 @@
 # 🔍 Flow-Lens
 
-![CI Pipeline](https://github.com/YOUR_USERNAME/ci-bottleneck-analyzer/actions/workflows/ci.yml/badge.svg)
+![CI Pipeline](https://github.com/jay-talera/flow-lens/actions/workflows/ci.yml/badge.svg)
 
 
 Full-stack GitHub Actions pipeline fetcher and analyser.

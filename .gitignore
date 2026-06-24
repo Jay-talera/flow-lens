@@ -1,0 +1,36 @@
+# ─── Environment Files - NEVER COMMIT ────────
+.env
+.env.*
+.env.local
+.env.production
+!.env.example
+
+# ─── Backend ──────────────────────────────────
+backend/target/
+backend/*.jar
+backend/*.war
+backend/*.class
+backend/.idea/
+backend/*.iml
+backend/logs/
+backend/*.log
+
+# ─── Frontend ─────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+frontend/.cache/
+
+# ─── IDE ──────────────────────────────────────
+.idea/
+.vscode/
+*.iml
+
+# ─── OS ───────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── Docker ───────────────────────────────────
+docker-compose.override.yml
+/backend/.gitignore

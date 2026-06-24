@@ -1,4 +1,4 @@
-# 🔍 Pipeline Analyser
+# 🔍 Flow-Lens
 
 Full-stack GitHub Actions pipeline fetcher and analyser.
 Fetches last 100 pipelines and generates a dashboard showing
@@ -15,7 +15,7 @@ bottlenecks, run counts, average durations and trends.
 
 ## 📁 Project Structure
 ```
-pipeline-analyser/
+flow-lens/
 ├── backend/          # Java Spring Boot API
 ├── frontend/         # Vite + Tailwind Dashboard
 ├── docker-compose.yml
@@ -27,7 +27,7 @@ pipeline-analyser/
 
 ### 1. Clone
 ```bash
-git clone https://github.com/YOUR_USERNAME/pipeline-analyser.git
+git clone https://github.com/YOUR_USERNAME/flow-lens.git
 cd pipeline-analyser
 ```
 

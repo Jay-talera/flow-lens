@@ -1,0 +1,23 @@
+# render.yaml
+services:
+  # ─── Backend ────────────────────────────────
+  - type: web
+    name: ci-bottleneck-backend
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: DB_URL
+        sync: false
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: FRONTEND_URL
+        sync: false
+      - key: SERVER_PORT
+        value: 8080

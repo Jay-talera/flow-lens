@@ -9,13 +9,13 @@ bottlenecks, run counts, average durations and trends.
 
 ## 🖥️ Tech Stack
 
-Layer          Technology              Platform
-──────────────────────────────────────────────
-Frontend       Vite + React + Tailwind  Vercel
-Backend        Java Spring Boot         Render
-Database       PostgreSQL               Supabase
-Container      Docker                   Local
-CI/CD          GitHub Actions           GitHub
+Layer      |    Technology               | Platform
+───────────|─────────────────────────────|──────────
+Frontend   |    Vite + React + Tailwind  | Vercel
+Backend    |    Java Spring Boot         | Render
+Database   |    PostgreSQL               | Supabase
+Container  |    Docker                   | Local
+CI/CD      |    GitHub Actions           | GitHub
 
 ## 📁 Project Structure
 ```

@@ -1,6 +1,7 @@
 # 🔍 Flow-Lens — CI Bottleneck Analyzer
 
 ![CI Pipeline](https://github.com/jay-talera/flow-lens/actions/workflows/ci.yml/badge.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 A full-stack application that fetches and analyses GitHub Actions pipelines.
 Displays bottlenecks, run counts, average durations and trends in a clean dashboard.

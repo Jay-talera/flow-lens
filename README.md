@@ -9,12 +9,13 @@ bottlenecks, run counts, average durations and trends.
 
 ## 🖥️ Tech Stack
 
-| Layer     | Technology                      |
-|-----------|---------------------------------|
-| Backend   | Java 17 + Spring Boot 3         |
-| Database  | PostgreSQL 15                   |
-| Frontend  | Vite + JavaScript + Tailwind CSS|
-| Container | Docker + Docker Compose         |
+Layer          Technology              Platform
+──────────────────────────────────────────────
+Frontend       Vite + React + Tailwind  Vercel
+Backend        Java Spring Boot         Render
+Database       PostgreSQL               Supabase
+Container      Docker                   Local
+CI/CD          GitHub Actions           GitHub
 
 ## 📁 Project Structure
 ```

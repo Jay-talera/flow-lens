@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useQuery } from "@tanstack/react-query";
+import apiClient from "../../api/apiClient.js";
 import {
     Cpu,
     CheckCircle2,
@@ -100,7 +101,7 @@ export default function Navbar() {
     const { data: healthData, isLoading, isError } = useQuery({
         queryKey: ["system-health"],
         queryFn: async () => {
-            const res = await fetch("/actuator/health");
+            const res = await apiClient.get("/actuator/health");
             if (!res.ok) throw new Error("Server unhealthy");
             return res.json();
         },

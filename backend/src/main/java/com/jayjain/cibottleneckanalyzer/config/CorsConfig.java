@@ -18,7 +18,8 @@ public class CorsConfig {
                 registry.addMapping("/actuator/**")
                         .allowedOrigins(
                                 "http://localhost:5173",
-                                "http://localhost:3000"
+                                "http://localhost:3000",
+                                "https://flow-lens-jay-jain.vercel.app"
                         )
                         .allowedMethods("GET", "OPTIONS") // Only GET & OPTIONS needed for status polling
                         .allowedHeaders("*")

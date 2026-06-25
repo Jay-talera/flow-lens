@@ -15,6 +15,15 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
 
+                registry.addMapping("/actuator/**")
+                        .allowedOrigins(
+                                "http://localhost:5173",
+                                "http://localhost:3000"
+                        )
+                        .allowedMethods("GET", "OPTIONS") // Only GET & OPTIONS needed for status polling
+                        .allowedHeaders("*")
+                        .allowCredentials(true);
+
                 registry.addMapping("/api/**")
                         .allowedOrigins(
                                 "http://localhost:5173",

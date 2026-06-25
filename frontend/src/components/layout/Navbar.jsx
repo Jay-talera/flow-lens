@@ -101,7 +101,7 @@ export default function Navbar() {
     const { data: healthData, isLoading, isError } = useQuery({
         queryKey: ["system-health"],
         queryFn: async () => {
-            const res = await apiClient.get("/actuator/health");
+            const res = await apiClient.get("https://flow-lens.onrender.com/actuator/health");
             if (!res.ok) throw new Error("Server unhealthy");
             return res.json();
         },
